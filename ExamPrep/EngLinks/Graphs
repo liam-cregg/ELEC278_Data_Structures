@@ -1,0 +1,19 @@
+Q: O, A, B, C, D, E, F, T
+Visited: {}
+
+Step 1:
+Q: A, B, C, D, E, F, T
+Visited: O
+Possible moves: A from O - 2, B from O - 5, C from O - 4
+Chosen: A from O - 2
+
+Step 2:
+Q: B, C, D, E, F, T
+Visited: O, A
+Possible moves: F from A - 12, D from A - 7, B from A - 4, B from O - 5, C from O - 4
+Chosen: B from A - 4 
+
+Step 3:
+Q: C, D, E, F, T
+Visited: O, A, B
+Possible moves: 

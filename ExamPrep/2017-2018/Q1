@@ -1,0 +1,29 @@
+1. 
+f(n) is O(g(n)) if:
+
+lim    (f(n)/g(n)) < inf
+x->inf
+
+2.
+We need to show that lim   (f(n) + g(n))/n^2 < inf
+                    x->inf
+
+Since n^2 is the term that increases most rapidly, we must have that 
+the limit does not escape to infinity
+
+3.
+Function is called n times ( sum(n) + sum(n-1) + ... + sum(n-n) )
+-> O(n)
+
+4.
+STATEMENT                   RUNNING TIME 
+sum = 0                     O(1) - constant
+i = 0                       O(1) - constant
+i <= n                      O(n) - n times
+i++                         O(n) - n times
+j = 0                       O(n) - n times
+j < F(n)                    O(n^2) - O(n) * O(n+100)
+j++                         O(n^2) - O(n) * O(n+100)
+sum + 1                     O(n^2) - O(n) * O(n+100)
+
+Therefore overall running time is O(n^2) - highest degree
